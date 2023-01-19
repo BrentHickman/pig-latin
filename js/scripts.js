@@ -4,15 +4,11 @@
 function collectVowel(pigLatinInput){
   let vowelFlag = false;
   const textArray = pigLatinInput.split(" ");
-  // let firstLetter = textArray.charAt(0);
-  const firstCharArray = textArray.map(function(element) {
-    return element.charAt(0);
-  });
-  console.log(firstCharArray);
+  let vowelArray = [];
 
   const vowels = ["a", "e", "i", "o", "u"];
-  for (let i = 0; i <= vowels.length; i++){
-    if (firstCharArray === vowels[i]){
+    for (let i = 0; i <= textArray.length-1; i++){
+    if (vowels.includes(textArray[i].substring(0,1))){
       vowelFlag = true;
     }
     console.log("Looped!");
