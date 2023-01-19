@@ -9,7 +9,8 @@ function collectVowel(pigLatinInput){
   const vowels = ["a", "e", "i", "o", "u"];
     for (let i = 0; i <= textArray.length-1; i++){
     if (vowels.includes(textArray[i].substring(0,1))){
-      vowelFlag = true;
+      let vowelArray = textArray[i] + "way";
+      console.log(vowelArray);
     }
     console.log("Looped!");
   }
